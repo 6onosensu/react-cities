@@ -42,7 +42,6 @@ function App() {
   return (
     <div className="App">
       <Cities data={cities}/>
-      Tut budet react cities
     </div>
   );
 }

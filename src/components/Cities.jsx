@@ -15,6 +15,11 @@ const Cities = (props) => {
 
   return (
     <div>
+      <input type="text" placeholder='Search..' id='search-input' className='input'/>
+      <h2>Cities population</h2>
+      <div>
+        <AddCity onAdded={addCity} />
+      </div>
       <table>
         <thead>
           <tr>
@@ -27,9 +32,6 @@ const Cities = (props) => {
           {cities.map(city => <City key={city.id} cityData={city} onDelete={deleteCity} />)}
         </tbody>
       </table>
-      <div>
-        <AddCity onAdded={addCity} />
-      </div>
     </div>
   )
 }
